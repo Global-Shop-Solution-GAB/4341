@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BorderStyle>None</BorderStyle>
+  <Pages>
+    <DefaultPage>
+      <Header>
+        <Offset>
+          <X>0</X>
+          <Y>0</Y>
+        </Offset>
+      </Header>
+      <Footer>
+        <Offset>
+          <X>0</X>
+          <Y>0</Y>
+        </Offset>
+      </Footer>
+      <PageSize>
+        <Width>0</Width>
+        <Height>0</Height>
+      </PageSize>
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <SelectionRect>
+      <Location>
+        <X>0</X>
+        <Y>105</Y>
+      </Location>
+      <Size>
+        <Width>24</Width>
+        <Height>17</Height>
+      </Size>
+      <X>0</X>
+      <Y>105</Y>
+      <Width>24</Width>
+      <Height>17</Height>
+    </SelectionRect>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <LineNumbersForeColor>WindowText</LineNumbersForeColor>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer>
+      <Offset>
+        <X>0</X>
+        <Y>0</Y>
+      </Offset>
+    </Footer>
+    <Header>
+      <Offset>
+        <X>0</X>
+        <Y>0</Y>
+      </Offset>
+    </Header>
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>105</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.Preflight.Start</string>
+        <string />
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Comments_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string>'This is a custom GAB script that will automatically apply a freight charge based on certain criteria when a user sends an invoice to a customer.</string>
+        <string>'The additional freight/freight insurance will be for invoices less than $800 and only UPS ground, prep-paid.</string>
+        <string>'Created for Dura-Mill by SKC on 2/15/2017</string>
+        <string />
+        <string>V.Local..BulkDeclareString(sShipment, sSeq, sSql, sExt, sShipVia, sFreight)</string>
+        <string>F.ODBC.Connection!conx.OpenConnection(v.Ambient.PDSN, v.Ambient.PUser, v.Ambient.PPass)</string>
+        <string>F.Intrinsic.Control.If(v.Caller.Hook, =, "36640")</string>
+        <string>	v.Local.sShipment.Set(v.Passed.000003)</string>
+        <string>	F.Intrinsic.String.LPad(v.Local.sShipment, "0", 7, v.Local.sShipment)</string>
+        <string>	v.Local.sSeq.Set(v.Passed.000004)</string>
+        <string>	F.Intrinsic.String.LPad(v.Local.sSeq, "0", 4, v.Local.sSeq)</string>
+        <string>	F.Intrinsic.String.Build("Select Sum (Extension) as Ext from v_Shipment_Lines where Order_No = '{0}' and Order_Suffix = '{1}' and Line_Type &lt;&gt; 'F'", v.Local.sShipment, v.Local.sSeq, v.Local.sSql)</string>
+        <string>	F.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sSql, v.Local.sExt)</string>
+        <string>	F.Intrinsic.String.Build("Select Sum (Extension) as Ext from v_Shipment_Lines where Order_No = '{0}' and Order_Suffix = '{1}' and Line_Type = 'F'", v.Local.sShipment, v.Local.sSeq, v.Local.sSql)</string>
+        <string>	F.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sSql, v.Local.sFreight)</string>
+        <string>	F.Intrinsic.String.Build("Select Ship_Via from v_Shipment_Header where Order_No = '{0}' and Order_Suffix = '{1}'", v.Local.sShipment, v.Local.sSeq, v.Local.sSql)</string>
+        <string>	F.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sSql, v.Local.sShipVia)</string>
+        <string>	'Calculate Freight Charge</string>
+        <string>	'Greater than 800 &amp; UPS Ground Prepaid = NO Freight Charge</string>
+        <string>	'Less than 800 = YES Freight Charge</string>
+        <string>	'Greater than 800 &amp; NOT UPS Ground Prepaid = YES Freight Charge</string>
+        <string>	F.Intrinsic.Control.If(v.Local.sShipVia.UCase, !=, "UPS GROUND PREPAID", "AND", v.Local.sExt.Float,&gt;, 800)</string>
+        <string>		'Yes Freight</string>
+        <string>		F.Intrinsic.Control.CallSub(freight, "Ext", v.Local.sExt, "Order", v.Local.sShipment, "Seq", v.Local.sSeq, "Freight", v.Local.sFreight)</string>
+        <string>	F.Intrinsic.Control.ElseIf(v.Local.sExt.Float,&lt;, 800)</string>
+        <string>		'Yes Freight</string>
+        <string>		F.Intrinsic.Control.CallSub(freight, "Ext", v.Local.sExt, "Order", v.Local.sShipment, "Seq", v.Local.sSeq, "Freight", v.Local.sFreight)</string>
+        <string>	f.Intrinsic.Control.EndIf</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("Comments_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4341_Freight.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.Unload.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Main_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string>F.ODBC.Connection!conx.Close</string>
+        <string>F.Intrinsic.Control.End</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("Main_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4341_Freight.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.End</string>
+        <string />
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.Unload.End</string>
+        <string />
+        <string>Program.Sub.Freight.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Unload_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string>v.Local.sFreight.Declare(String)</string>
+        <string>v.Local.sParam.Declare(String)</string>
+        <string>v.Local.fInsurance.Declare(Float)</string>
+        <string>v.Local.fnewamount.Declare(float)</string>
+        <string />
+        <string>'Calculate the Insurance charge</string>
+        <string>F.Intrinsic.Math.Div(v.Args.ext.float, 100, v.Local.fInsurance)</string>
+        <string />
+        <string>f.Intrinsic.Control.If(v.Local.fInsurance,&lt;,1)</string>
+        <string>	F.Intrinsic.Math.Add(.175, v.Args.Freight.float, v.Local.fInsurance)</string>
+        <string>f.Intrinsic.Control.Else</string>
+        <string>	f.Intrinsic.Math.Round(v.Local.fInsurance,0,v.local.finsurance)</string>
+        <string>	F.Intrinsic.Math.Mult(.175, v.Local.fInsurance, v.Local.fInsurance)</string>
+        <string>	f.Intrinsic.Math.Add(v.Local.fInsurance,v.Args.freight.float,v.Local.fInsurance)</string>
+        <string>f.Intrinsic.Control.EndIf</string>
+        <string>'f.Intrinsic.Math.Round(v.Local.fInsurance,0,v.local.fnewamount)</string>
+        <string>'F.Intrinsic.Math.Mult(.175, v.Local.fnewamount, v.Local.fInsurance)</string>
+        <string>'F.Intrinsic.Math.Div(v.Local.fInsurance, 100, v.Local.fInsurance)</string>
+        <string>'F.Intrinsic.Math.Add(v.Local.fInsurance, v.Args.Freight.float, v.Local.fInsurance)</string>
+        <string>F.Intrinsic.Math.Round(v.Local.fInsurance,2, v.Local.fInsurance)</string>
+        <string>F.Intrinsic.String.Split(v.Local.fInsurance, ".", v.Local.sFreight)</string>
+        <string>V.Local.sFreight.RedimPreserve(0,1)</string>
+        <string>F.Intrinsic.String.RPad(v.Local.sFreight(1), "0", 2,v.Local.sFreight(1))</string>
+        <string>F.Intrinsic.String.LPad(v.Local.sFreight(0), "0", 10, v.Local.sFreight(0))</string>
+        <string>f.Intrinsic.String.Build("{0}{1}", v.Local.sFreight(0), v.Local.sFreight(1), v.Local.sFreight(0))</string>
+        <string>'Build the parameters and call World Ship</string>
+        <string>F.Intrinsic.String.Build("{0}{1}{2}{3}{3}Y", v.Caller.CompanyCode, v.Args.Order, v.Args.Seq, v.Local.sFreight(0), v.Local.sParam)</string>
+        <string>'Call World Ship</string>
+        <string>F.Intrinsic.Task.LaunchGSSSync("ORD1FRTV", "-c", v.Local.sParam)</string>
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("Unload_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4341_Freight.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.Freight.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$GCG_4341_Freight$}$SKC$}$2/15/2017 3:10:36 PM$}$False</string>
+        <string>${$1$}$$}$$}$0$}$36640$}$$}$2/16/2017 7:29:01 AM$}$This is the hook that fires before the invoice is selected so that we can get freight added to the shipment</string>
+        <string>${$2$}$$}$$}$0$}$3$}$ORD1FRTV$}$2/16/2017 7:29:01 AM$}$We are calling the World Ship program to get these additional Freight added to the shipment before the order goes to be invoiced.  </string>
+        <string />
+        <string>You should be able to use the existing core module ORD1FRTV which is used by the  </string>
+        <string>old WorldShip interface to add freight to shipments. After the shipment is selected to invoice, you would call this module to update/add freight to the shipment. The parameters must be passed in the specified order with the exact number of characters with no delimiters between. The parameter string is as follows: </string>
+        <string />
+        <string>cccooooooossssaaaaaaaaaaaaccccccccccccm </string>
+        <string />
+        <string>ccc is the Company code, ooooooo is the Order Number, ssss is the Shipment Sequence, aaaaaaaaaaaa is the freight charge (the decimal is implied with 10 digits before the decimal and 2 digits after), cccccccccccc is the freight cost (the decimal is implied with 10 digits before the decimal and 2 digits after), and m is the suppress message flag (a value of "Y" will suppress any error messages). As you are running from a screen hook, I would not suppress messages. The total length of the parameter string is 39 characters. Here is an example: </string>
+        <string />
+        <string>INF00948570000000000002500000000001500N </string>
+        <string />
+        <string>where the company is INF, the order is 0094857, the shipment sequence is 0000, the freight amount is 0000000000002500 (representing 25.00), the freight cost is 000000001500 (representing 15.00), and messages are not suppressed.</string>
+        <string>${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$This is a custom GAB script that will automatically apply a freight charge based on certain criteria when a user sends an invoice to a customer.</string>
+        <string>The additional freight/freight insurance will be for invoices less than $800 and only UPS ground, pre-paid.</string>
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling>
+    <WindowOriginY>50</WindowOriginY>
+    <Options>None</Options>
+  </Scrolling>
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>2</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>4</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>44</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>46</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>61</Y>
+        </EndPoint>
+        <Text>Program.Sub.Unload</Text>
+        <DisplayText>Program.Sub.Unload</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>63</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>103</Y>
+        </EndPoint>
+        <Text>Program.Sub.Freight</Text>
+        <DisplayText>Program.Sub.Freight</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>105</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>122</Y>
+        </EndPoint>
+        <Text>Program.Sub.Comments</Text>
+        <DisplayText>Program.Sub.Comments</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
